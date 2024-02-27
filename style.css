@@ -1,0 +1,11 @@
+a:hover {
+    font-family: Comic Sans MS;
+    font-weight:bold;
+    color:red;
+    font-size: 64pt;
+}
+
+a, a:active, a:visited {
+    text-decoration: none;
+    color: #fff;
+}
