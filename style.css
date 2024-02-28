@@ -1,13 +1,13 @@
-body{
+body {
     margin: 0;
     padding: 0;
-    color:#fff;
+    color: #fff;
     background-color: blue;
     font-size: 12px;
     font-family: Consolas;
 }
 
-header{
+header {
     min-width: 100%;
     min-height: 150px;
 }
@@ -24,18 +24,20 @@ main {
 
 footer {
     width: 100%;
-    clear:both
+    clear: both
 }
 
 a:hover {
     font-family: Comic Sans MS;
-    font-weight:bold;
-    color:red;
+    font-weight: bold;
+    color: red;
     font-size: 64pt;
     cursor: url("mouse.png"), auto;
 }
 
-a, a:active, a:visited {
+a,
+a:active,
+a:visited {
     text-decoration: none;
     color: #fff;
 }
