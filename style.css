@@ -1,8 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    color:#fff;
+    background-color: blue;
+    font-size: 12px;
+    font-family: Consolas;
+}
+
+header{
+    min-width: 100%;
+    min-height: 150px;
+}
+
+nav {
+    width: 20%;
+    float: left;
+}
+
+main {
+    width: 80%;
+    float: right;
+}
+
+footer {
+    width: 100%;
+    clear:both
+}
+
 a:hover {
     font-family: Comic Sans MS;
     font-weight:bold;
     color:red;
     font-size: 64pt;
+    cursor: url("mouse.png"), auto;
 }
 
 a, a:active, a:visited {
