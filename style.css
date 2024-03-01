@@ -1,25 +1,50 @@
+:root {
+    font-size: 1rem;
+    --my-padding-left: 1rem;
+    --font-stfamily: 'Myriad Pro', Arial;
+}
+
 body {
     margin: 0;
     padding: 0;
-    color: #fff;
-    background-color: blue;
-    font-size: 12px;
-    font-family: Consolas;
+    font-family: var(--font-stfamily);
 }
 
 header {
+    background-color: #fa1e41;
     min-width: 100%;
-    min-height: 150px;
+    min-height: 5rem;
+    max-height: 5rem;
+    margin-top: 0;
+    position: fixed;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.back {
+    min-height: 7rem;
+    max-height: 7rem;
+}
+
+div#container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 15fr 85fr;
 }
 
 nav {
-    width: 20%;
-    float: left;
+    background-color: #8c0041;
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 250px;
 }
 
 main {
-    width: 80%;
-    float: right;
+    background-color: #fff;
+    color: blue;
+    grid-column: 2;
+    grid-row: 1;
+    padding-left: var(--my-padding-left);
 }
 
 footer {
@@ -40,4 +65,33 @@ a:active,
 a:visited {
     text-decoration: none;
     color: #fff;
+}
+
+h1.header {
+    font-family: 'Sharp Grotesk 25';
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    div#container {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 100fr;
+    }
+
+    nav {
+        background-color: red;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    main {
+        background-color: #fff;
+        color: darkblue;
+        grid-column: 1;
+        grid-row: 2
+    }
 }
