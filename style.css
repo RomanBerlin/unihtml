@@ -32,6 +32,7 @@ div#container {
     grid-template-columns: 15fr 85fr;
 }
 
+
 nav {
     background-color: #8c0041;
     grid-column: 1;

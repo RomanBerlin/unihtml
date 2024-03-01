@@ -27,7 +27,7 @@
         </nav>
         <main>
             <section>
-                <div style=" cursor: url(mouse.png), auto;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                <div id="Textfarbe">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                     diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
                     vero
                     eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
@@ -37,6 +37,16 @@
                     accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
                     Lorem
                     ipsum dolor sit amet.</div>
+                <button id="farbeAendern">Farbe Wechseln</button>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function(){
+                        document.querySelector('#farbeAendern').addEventListener('click', changeTextfarbe);
+                    })
+
+                    function changeTextfarbe() {
+                        document.querySelector("#Textfarbe").style.color = "red";
+                    }
+                </script>
             </section>
         </main>
     </div>
